@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 from matplotlib import dates
 import seaborn as sns
 
+# https://data.cdc.gov/NCHS/Weekly-Counts-of-Deaths-by-State-and-Select-Causes/muzy-jte6
 df = pd.read_csv(r'C:\Users\steve\Downloads\wkly_dths_2.csv') 
 df = df[df['Jurisdiction of Occurrence'] == 'United States']
 df_causes_wkly = df[[
